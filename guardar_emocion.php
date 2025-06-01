@@ -4,7 +4,7 @@ session_start();
 if (isset($_POST['emocion'])) {
     // Mapeo de emojis a emociones internas
     $emocion_map = [
-        "😄 Alegría"     => "feliz",
+        "😄 Alegria"     => "feliz",
         "😢 Tristeza"    => "triste",
         "😠 Ira"         => "enojado",
         "😨 Miedo"       => "miedo",

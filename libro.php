@@ -194,13 +194,13 @@ if (isset($_GET['id'])) {
                                 <div class="form-field">
                                     <label for="emocion">¿Cómo te hizo sentir este libro?</label>
                                     <select name="emocion" id="emocion" class="h-full-width">
-                                        <option value="😄 Alegría">😄 Alegría</option>
-                                        <option value="😢 Tristeza">😢 Tristeza</option>
-                                        <option value="😠 Ira">😠 Ira</option>
-                                        <option value="😨 Miedo">😨 Miedo</option>
-                                        <option value="😲 Sorpresa">😲 Sorpresa</option>
-                                        <option value="😐 Neutral">😐 Neutral</option>
-                                        <option value="🤢 Asco">🤢 Asco</option>
+                                        <option value="joy">😄 Alegría</option>
+                                        <option value="sadness">😢 Tristeza</option>
+                                        <option value="anger">😠 Ira</option>
+                                        <option value="fear">😨 Miedo</option>
+                                        <option value="surprise">😲 Sorpresa</option>
+                                        <option value="neutral">😐 Neutral</option>
+                                        <option value="disgust">🤢 Desagrado</option>
                                     </select>
                                 </div>
 

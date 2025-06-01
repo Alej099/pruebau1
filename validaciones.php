@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['correo'], $_POST['con
         <div class="overlay" id="emotionOverlay">
             <div class="modal">
                 <h3>"Dinos cómo te sientes… y déjanos ofrecerte lecturas que comprendan tu alma."</h3>
-                <button class="emoji-button" onclick="selectEmotion(\'😄 Alegría\')">😄</button>
+                <button class="emoji-button" onclick="selectEmotion(\'😄 Alegria\')">😄</button>
                 <button class="emoji-button" onclick="selectEmotion(\'😢 Tristeza\')">😢</button>
                 <button class="emoji-button" onclick="selectEmotion(\'😠 Ira\')">😠</button>
                 <button class="emoji-button" onclick="selectEmotion(\'😨 Miedo\')">😨</button>

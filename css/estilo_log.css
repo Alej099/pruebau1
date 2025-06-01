@@ -1,0 +1,119 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.fondo {
+  background-image: url('../images/libreria.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.contenedor-libro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cubierta {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  width: 250px;
+  z-index: 2;
+}
+
+.pagina-login {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fondo-login {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.formulario {
+  background: rgba(109, 108, 108, 0.5);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #000;
+  z-index: 1;
+  text-align: center;
+}
+
+.formulario input, .formulario button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.formulario a {
+  text-decoration: underline;
+  color: #030000;
+  font-weight: bold;
+  font-size: 16px;
+}
+.logo.zoom {
+  transform: scale(1.2);
+  transition: transform 0.8s ease;
+}
+
+/* Simulación del giro de página */
+.girar-pagina {
+  animation: pasarPagina 0.5s forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes pasarPagina {
+  0% {
+    transform: translate(-50%, -50%) rotateY(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateY(-120deg);
+    opacity: 0;
+  }
+}
+
+.pagina-login {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.pagina-login.visible {
+  display: flex;
+  opacity: 1;
+}
